@@ -1,0 +1,95 @@
+ /* Reset básico */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background-color: #8c6a03;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    /* Nav General */
+    nav {
+      background-color: #423302;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    /* Nav para a */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    /* Contenedor principal */
+    section {
+      display: flex; /* Activa Flexbox */
+      justify-content: space-between; /* Espacio entre las secciones */
+      gap: 20px; /* Espacio uniforme entre las secciones */
+      padding: 20px;
+      flex-wrap: wrap; /* Permite que las secciones se apilen */
+    }
+
+    /* Clases para estilo general para todas las secciones */
+    .izquierda,
+    .centro,
+    .derecha {
+      padding: 20px;
+      border-radius: 8px;
+      box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    }
+
+    /* Estilo Sección izquierda */
+    .izquierda {
+      flex: 1; /* Ocupa una parte del espacio */
+      background-color: rgba(140, 106, 3, 0.23); /* Color de fondo */
+    }
+
+    /* Sección central */
+    .centro {
+      flex: 2; /* Ocupa el doble de espacio */
+      background-color: rgb(215, 200, 154); /* Color de fondoo */
+      box-shadow: 0 2px 5px #303330;
+    }
+
+    /* Sección derecha */
+    .derecha {
+      flex: 1; /* Ocupa una parte del espacio */
+      background-color: rgba(140, 106, 3, 0.23); /* Azul claro */
+    }
+
+    iframe {
+      width: 100%;
+      height: 692px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #423302;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Diseño responsivo */
+    @media (max-width: 768px) {
+      .izquierda,
+      .centro,
+      .derecha {
+        flex: 1 1 100%; /* Cada sección ocupa el 100% del ancho */
+        margin-bottom: 5px; /* Espaciado entre secciones apiladas */
+      }
+    }
